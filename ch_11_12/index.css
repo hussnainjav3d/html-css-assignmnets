@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap');
+
+#title {
+    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+ul li {
+    margin-top: 20px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+a:focus {
+    color: blue;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: 'MuseoModerno', cursive;
+}
+
+h2::first-letter {
+    font-size: 46px;
+}
+
+.container {
+    width: 860px;
+    margin: 0 auto;
+    text-align: justify;
+    border: 2px solid;
+    padding: 10px 35px;
+}
+
+.container p {
+    line-height: 1.8;
+}
