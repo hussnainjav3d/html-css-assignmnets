@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Deploy Panacoud page
+name: Deploy Panacloud page
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -29,4 +29,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run Surge
-        run: surge ./panaclud-page http://hussnain-panacloud-page.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./panacloud-page http://hussnain-panacloud-page.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
