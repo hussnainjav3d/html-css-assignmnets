@@ -29,4 +29,4 @@ jobs:
       - name: Install Surge
         run: npm install -g surge
       - name: Run Surge
-        run: surge ./panacloud-page http://hussnain-panacloud-page.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./panacloud-page/index.html http://hussnain-panacloud-page.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
