@@ -333,6 +333,47 @@ a {
     color: var(--clr-primary-200);
 }
 
+/* Our POrtfolio */
+
+.our-portfolio {
+    padding: 1rem;
+    background-color: var(--clr-dark-800);
+}
+
+.our-portfolio p,
+.our-portfolio h2{
+    color: white;
+}
+
+.portfolio-menu a{
+    color: white;
+}
+
+.portfolio-list{
+    max-width: 75%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.portfolio-showcase{
+    width: 75%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 0;
+}
+
+.portfolio-showcase> div{
+    height: 120px;
+    background-color: #fff;
+    margin: 0;
+    
+}
+
 /* MEDIA qUERIES */
 
 @media screen and (max-width: 1268px) {
