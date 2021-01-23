@@ -670,7 +670,7 @@ a {
 }
 
 .contact-list span {
-    font-weight: normal;
+    font-weight: bold;
     color: #333;
     margin-left: 0.5rem;
 }
@@ -694,23 +694,64 @@ a {
 
 
 .footer-inner {
-    margin: 0 2rem;
+    margin: 0 3rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     color: #fff;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.footer-inner div:nth-child(3) ul {
-    padding: 2rem;
-    border-right: 2px solid #fff;
-    border-left: 2px solid #fff;
+.footer-inner .logo img {
+    margin: 1rem 0 1rem -1rem;
+
 }
+
+.copyright {
+    margin-top: 2rem;
+}
+
+
 
 
 .footer-inner p,
 .footer-inner h2 {
     color: rgb(240, 240, 240);
+}
+
+.services {
+    margin: 2rem;
+    padding-right: -2rem;
+    /* text-align: center; */
+}
+
+.footer-contact {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.footer-contact .contact-list {
+    margin: 0;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-contact .contact-list i {
+    color: var(--clr-dark-800);
+}
+
+.social-media {
+    margin: 1rem 0;
+}
+
+.social-media .social-links {
+    margin: 0.5rem 0
+}
+
+.social-media .icons {
+    padding: 0.5rem;
+    margin: 0.25rem;
 }
 
 /* MEDIA qUERIES */
@@ -723,6 +764,10 @@ a {
     .service-text {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .contact-list {
+        width: 95%;
     }
 }
 
@@ -765,6 +810,24 @@ a {
 
     .split {
         grid-template-columns: 1fr;
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
+
+    .contact-list {
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+
+    .location {
+        grid-column: 1 / span 2;
+    }
+
+    .email-icon {
+        grid-column: 1 /span 2;
     }
 }
 
@@ -848,11 +911,20 @@ a {
         align-items: center;
         width: 100%;
     }
+
+    .contact-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width:700px) {
     .why-cards {
         grid-template-columns: repeat(3, 2fr);
+    }
+
+    .footer-inner {
+        grid-template-columns: 1fr;
+        place-items: center;
     }
 }
 
