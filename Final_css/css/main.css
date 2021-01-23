@@ -268,6 +268,7 @@ a {
 .about-us {
     padding: 1rem;
     background-color: rgb(228, 227, 227);
+    /* position: relative; */
 }
 
 
@@ -283,6 +284,13 @@ a {
     display: inline-block;
     background-color: var(--clr-btn);
     margin-top: 3rem;
+}
+
+.about-pic {
+    display: block;
+    margin-left: 2rem;
+    width: 100%;
+    margin-bottom: -2rem;
 }
 
 /* Our Services */
@@ -475,6 +483,8 @@ a {
     height: 100px;
     border-radius: 50%;
     margin-right: 2rem;
+    background-position: center;
+    background-size: cover;
 }
 
 .circle-list {
@@ -504,6 +514,7 @@ a {
 
 .our-skills {
     padding: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .skill-progress {
@@ -590,6 +601,118 @@ a {
     color: #212121;
 }
 
+/* Project Submit */
+
+.project-request {
+    padding: 1rem;
+    background-color: var(--clr-primary-200);
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form p {
+    margin: 0.5rem auto;
+    color: #fff;
+}
+
+.form-control input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.form-control .btn {
+    padding: 0.5rem 0.75rem;
+    margin-left: 1rem;
+    background-color: var(--clr-btn);
+}
+
+/* Our Contact */
+
+.our-contact {
+    padding-top: 1rem;
+    padding-bottom: 0;
+}
+
+.contact-list {
+    display: grid;
+    place-items: center;
+    row-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.location {
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+.contact-list i {
+    color: var(--clr-primary-200);
+}
+
+.contact-list span {
+    font-weight: normal;
+    color: #333;
+    margin-left: 0.5rem;
+}
+
+.contact-map img {
+    position: relative;
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0;
+    background-color: #adadad;
+    width: 81.25rem;
+    z-index: -1;
+    /* height: 350px; */
+}
+
+.footer {
+    z-index: 9999;
+    background-color: #668e19;
+    margin-top: -1rem;
+}
+
+
+.footer-inner {
+    margin: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+    padding: 2rem;
+}
+
+.footer-inner div:nth-child(3) ul {
+    padding: 2rem;
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+
+
+.footer-inner p,
+.footer-inner h2 {
+    color: rgb(240, 240, 240);
+}
+
 /* MEDIA qUERIES */
 
 @media screen and (max-width: 1268px) {
@@ -602,6 +725,49 @@ a {
         padding-right: 15px;
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: inline-block;
+        margin: auto 0;
+    }
+
+    .header-main {
+        position: relative;
+    }
+
+    .menu.show {
+        background-color: rgba(255, 255, 250, 0.7);
+        display: inline;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        transition: all 0.3s;
+    }
+
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        border-bottom: 2px solid black;
+        text-align: center;
+        margin: 2px 0;
+        user-select: none;
+    }
+
+    .split {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     .header-top {
@@ -654,53 +820,33 @@ a {
     .skill-progress {
         grid-template-columns: repeat(2, auto);
     }
-}
 
-@media screen and (max-width: 1080px) {
-    .menu {
-        display: none;
-    }
-
-    .menu-btn {
-        display: inline-block;
-        margin: auto 0;
-    }
-
-    .header-main {
-        position: relative;
-    }
-
-    .menu.show {
-        background-color: rgba(255, 255, 250, 0.7);
-        display: inline;
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        width: 100%;
-        flex-direction: column;
-        transition: all 0.3s;
-    }
-
-    .menu-list {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .menu-item {
-        border-bottom: 2px solid black;
-        text-align: center;
-        margin: 2px 0;
-        user-select: none;
-    }
-
-    .split {
-        grid-template-columns: 1fr;
+    .form-control .btn {
+        display: block;
+        margin: 1rem auto;
     }
 }
 
-@media screen and (max-width:850px) {
+
+@media screen and (max-width:860px) {
     .why-cards {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .form {
+        width: 31.25rem;
+        margin: 0 auto;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    .form-control input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
 
@@ -717,5 +863,16 @@ a {
 
     .why-cards {
         grid-template-columns: repeat(2, 2fr);
+    }
+
+    .testimonial {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .testimonial-grid {
+        margin: 0.25rem 0;
     }
 }
