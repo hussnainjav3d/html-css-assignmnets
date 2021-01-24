@@ -1,2 +1,8 @@
-# html-css-assignmnets
-# html-css-assignmnets
+# PIAIC Batch 4, Q2 HTML_CSS Assignments
+
+##Final Assignment
+
+Use Fontawesome,
+use media quries for responsive
+
+
