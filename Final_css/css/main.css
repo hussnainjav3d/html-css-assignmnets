@@ -48,6 +48,11 @@ a {
     color: #000;
 }
 
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
 .container {
     max-width: 1300px;
     margin: auto;
@@ -91,6 +96,10 @@ a {
     color: var(--clr-primary-600);
 }
 
+.text-center {
+    text-align: center;
+}
+
 .lg-text {
     font-size: 2rem;
 }
@@ -123,7 +132,12 @@ a {
     background-color: #111;
     padding: 0.9rem;
     border-radius: 50%;
-    color: white
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.icons:hover {
+    color: #668f19;
 }
 
 .contact-us li {
@@ -159,6 +173,7 @@ a {
 
 .menu-item:hover {
     border-bottom: 5px solid var(--clr-btn);
+    padding-bottom: 0.5rem;
 }
 
 /* Menu Btn */
@@ -223,7 +238,6 @@ a {
     text-align: center;
 }
 
-
 /* Section Why uS */
 .why-us {
     padding: 1rem;
@@ -235,7 +249,7 @@ a {
     grid-gap: 15px;
 }
 
-.card {
+.cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -614,7 +628,7 @@ a {
     color: #fff;
 }
 
-.form {
+.form-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -623,12 +637,12 @@ a {
     text-align: center;
 }
 
-.form p {
+.form-content p {
     margin: 0.5rem auto;
     color: #fff;
 }
 
-.form-control input {
+.form-controler input {
     font-size: 1rem;
     padding: 0.5rem;
     border: 0;
@@ -637,7 +651,7 @@ a {
     margin-top: 0.5rem;
 }
 
-.form-control .btn {
+.form-controler .btn {
     padding: 0.5rem 0.75rem;
     margin-left: 1rem;
     background-color: var(--clr-btn);

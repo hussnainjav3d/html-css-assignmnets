@@ -5,9 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PanaCloud</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script> -->
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -51,12 +61,12 @@
                 <ul class="menu-list flex">
                     <li class="menu-item"><a href="#why-us">why us</a></li>
                     <li class="menu-item"><a href="#about-us">about</a></li>
-                    <li class="menu-item"><a href="#">services</a></li>
-                    <li class="menu-item"><a href="#">portfolio</a></li>
-                    <li class="menu-item"><a href="#">process</a></li>
-                    <li class="menu-item"><a href="#">review</a></li>
-                    <li class="menu-item"><a href="#">our skills</a></li>
-                    <li class="menu-item"><a href="#">contact us</a></li>
+                    <li class="menu-item"><a href="#our-services">services</a></li>
+                    <li class="menu-item"><a href="#our-portfolio">portfolio</a></li>
+                    <li class="menu-item"><a href="#our-process">process</a></li>
+                    <li class="menu-item"><a href="#people-about-us">review</a></li>
+                    <li class="menu-item"><a href="#our-skills">our skills</a></li>
+                    <li class="menu-item"><a href="#our-contact">contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -76,35 +86,35 @@
                 eaque ipsam dolore cupiditate omnis culpa?</p>
         </div>
         <div class="why-cards">
-            <div class="card">
+            <div class="cards">
                 <div class="card-icon"><i class="far fa-lightbulb"></i></div>
                 <div class="crad-info">
                     <h4 class="uppercase">Innovation</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ea.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="cards">
                 <div class="card-icon"><i class="far fa-thumbs-up"></i></div>
                 <div class="crad-info">
                     <h4 class="uppercase">quality</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ea.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="cards">
                 <div class="card-icon"><i class="fas fa-business-time"></i></div>
                 <div class="crad-info">
                     <h4 class="uppercase">experience</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ea.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="cards">
                 <div class="card-icon"><i class="fas fa-users"></i></div>
                 <div class="crad-info">
                     <h4 class="uppercase">happy clients</h4>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, ea.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="cards">
                 <div class="card-icon"><i class="far fa-comments"></i></div>
                 <div class="card-info">
                     <h4 class="uppercase">support</h4>
@@ -209,7 +219,7 @@
             <div></div>
         </div>
     </section>
-    <section class="our-process container">
+    <section class="our-process container" id="our-process">
         <div class="heading">
             <h2 class="uppercase lg-text">Our <span class="text-green">process</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus officia eveniet fuga
@@ -260,7 +270,7 @@
             </div>
         </div>
     </section>
-    <section class="people-about-us container">
+    <section class="people-about-us container" id="people-about-us">
         <div class="heading">
             <h2 class="uppercase lg-text">people <span class="text-green">about us</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus officia eveniet fuga
@@ -306,7 +316,7 @@
             <div class="circle"></div>
         </div>
     </section>
-    <section class="our-skills container">
+    <section class="our-skills container" id="our-skills">
         <div class="heading">
             <h2 class="uppercase lg-text">our <span class="text-green">skills </span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus officia eveniet fuga
@@ -356,12 +366,12 @@
         </div>
     </section>
 
-    <section class="project-request container">
+    <section class="project-request container" id="project-request">
         <div class="heading">
             <h1>start your new project</h1>
         </div>
-        <div class="form">
-            <form action="submit" class="form-control">
+        <div class="form-content">
+            <form action="submit" class="form-controler">
                 <input type="text" placeholder="YOUR NAME" required>
                 <input type="email" placeholder="YOUR EMAIL" required>
                 <input type="number" placeholder="YOUR PHONE" required>
@@ -371,7 +381,7 @@
                 optio ratione rerum excepturi, natus ex.</p>
         </div>
     </section>
-    <section class="our-contact container">
+    <section class="our-contact container" id="our-contact">
         <div class="heading">
             <h2 class="uppercase lg-text">our <span class="text-green">Contact </span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus officia eveniet fuga
